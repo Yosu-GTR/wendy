@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Innovación en Sistemas Informáticos - Inicio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Lato:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="icon"
+      type="icon"
+      href="https://img.freepik.com/vector-gratis/plantilla-logotipo-laptop-plana_23-2149020405.jpg"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo">IT Innovación</a>
+      <div class="hamburger-menu" id="hamburgerMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav id="mainNav">
+        <ul>
+          <li><a href="index.html" class="active">Inicio</a></li>
+          <li><a href="tendencias.html">Tendencias Clave</a></li>
+          <li><a href="exito.html">Casos de Éxito</a></li>
+          <li><a href="recursos.html">Recursos y Herramientas</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <h2>Impulsando el Futuro con la Tecnología</h2>
+
+      <div class="info-section">
+        <div class="info-card">
+          <h3>¿Qué es la Innovación en IT?</h3>
+          <p>
+            La innovación en sistemas informáticos se refiere al desarrollo e
+            implementación de nuevas ideas, procesos, productos o servicios
+            tecnológicos que aportan un valor significativo. Esto puede incluir
+            desde mejoras en la eficiencia de la infraestructura existente hasta
+            la creación de tecnologías disruptivas.
+          </p>
+          <p>
+            Es un motor fundamental para la competitividad empresarial y el
+            progreso social en la era digital.
+          </p>
+        </div>
+
+        <div class="info-card">
+          <h3>Pilares de la Transformación Digital</h3>
+          <p>La innovación en IT se apoya en varios pilares estratégicos:</p>
+          <ul>
+            <li>Automatización y Optimización de Procesos.</li>
+            <li>Inteligencia Artificial y Machine Learning.</li>
+            <li>Computación en la Nube (Cloud Computing).</li>
+            <li>Ciberseguridad Avanzada.</li>
+            <li>Análisis de Grandes Datos (Big Data Analytics).</li>
+            <li>Desarrollo de Software Ágil y DevOps.</li>
+          </ul>
+          <p>
+            Estos elementos trabajan en conjunto para crear soluciones más
+            eficientes, seguras y escalables.
+          </p>
+        </div>
+      </div>
+
+      <div class="info-card full-width">
+        <h3>El Impacto de la Innovación Tecnológica</h3>
+        <p>
+          La innovación en IT no solo optimiza operaciones, sino que también
+          abre nuevas vías de negocio, mejora la experiencia del cliente y
+          facilita la toma de decisiones basada en datos. Es crucial para que
+          las organizaciones se mantengan relevantes en un mercado en constante
+          evolución.
+        </p>
+        <p>
+          Desde la robótica hasta el blockchain, cada avance redefine las
+          posibilidades y empuja los límites de lo que es tecnológicamente
+          viable.
+        </p>
+        <img
+          src="https://static.vecteezy.com/system/resources/previews/008/405/918/non_2x/big-data-analytics-big-data-innovation-technology-concept-blockchain-network-analysis-artificial-intelligence-hexagonal-grid-sphere-in-wireframe-hand-on-blue-background-illustration-vector.jpg"
+          alt="Red de datos e innovación tecnológica"
+          class="main-image"
+          loading="lazy"
+        />
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        &copy; 2023 Innovación en Sistemas Informáticos. Todos los derechos
+        reservados.
+      </p>
+      <p>Impulsando el futuro de la tecnología.</p>
+    </footer>
+
+    <script>
+      document
+        .getElementById("hamburgerMenu")
+        .addEventListener("click", function () {
+          document.body.classList.toggle("menu-open");
+        });
+      document.body.addEventListener("click", function (event) {
+        const hamburger = document.getElementById("hamburgerMenu");
+        const nav = document.getElementById("mainNav");
+        const isClickInsideMenu =
+          nav.contains(event.target) || hamburger.contains(event.target);
+
+        if (
+          !isClickInsideMenu &&
+          document.body.classList.contains("menu-open")
+        ) {
+          document.body.classList.remove("menu-open");
+        }
+      });
+    </script>
+  </body>
+</html>

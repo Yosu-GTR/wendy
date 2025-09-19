@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Innovación en Sistemas Informáticos - Casos de Éxito</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Lato:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="exito.css" />
+    <link
+      rel="icon"
+      type="icon"
+      href="https://img.freepik.com/vector-gratis/plantilla-logotipo-laptop-plana_23-2149020405.jpg"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo">IT Innovación</a>
+      <div class="hamburger-menu" id="hamburgerMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav id="mainNav">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="tendencias.html">Tendencias Clave</a></li>
+          <li>
+            <a href="exito.html" class="active">Casos de Éxito</a>
+          </li>
+          <li><a href="recursos.html">Recursos y Herramientas</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <h2>Historias de Éxito en la Transformación Digital</h2>
+
+      <div class="cases-grid">
+        <!-- Caso de Éxito 1: Implementación de IA en Retail -->
+        <div class="case-card">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXvT9s3K-bAnZ7kTqO2T3Mmiuo8y5EsxUboQ&s"
+            alt="Retail con IA"
+            loading="lazy"
+          />
+          <div class="case-content">
+            <h3>Retail Inteligente con IA</h3>
+            <p>
+              Una cadena de supermercados implementó un sistema de IA para
+              optimizar la gestión de inventarios, predecir la demanda y
+              personalizar ofertas. Esto resultó en una reducción del 15% en el
+              desperdicio de productos y un aumento del 8% en las ventas.
+            </p>
+            <div class="tags">
+              <span class="tag">IA</span>
+              <span class="tag">Machine Learning</span>
+              <span class="tag">Retail</span>
+            </div>
+            <a href="#" class="read-more">Leer más &gt;</a>
+          </div>
+        </div>
+
+        <!-- Caso de Éxito 2: Plataforma Cloud para Educación -->
+        <div class="case-card">
+          <img
+            src="https://www.educaciontrespuntocero.com/wp-content/uploads/2015/03/nube2.jpg"
+            alt="Plataforma Educativa Cloud"
+            loading="lazy"
+          />
+          <div class="case-content">
+            <h3>Transformación Educativa en la Nube</h3>
+            <p>
+              Una universidad adoptó una plataforma de aprendizaje completamente
+              basada en la nube, mejorando la accesibilidad a los recursos, la
+              colaboración entre estudiantes y profesores, y la escalabilidad
+              para miles de usuarios. La eficiencia operativa mejoró un 25%.
+            </p>
+            <div class="tags">
+              <span class="tag">Cloud Computing</span>
+              <span class="tag">Educación</span>
+              <span class="tag">Escalabilidad</span>
+            </div>
+            <a href="#" class="read-more">Leer más &gt;</a>
+          </div>
+        </div>
+
+        <!-- Caso de Éxito 3: Ciberseguridad Proactiva para Finanzas -->
+        <div class="case-card">
+          <img
+            src="https://www.cronista.com/files/image/1220/1220450/689390a5a6ea7.jpg"
+            alt="Ciberseguridad Financiera"
+            loading="lazy"
+          />
+          <div class="case-content">
+            <h3>Blindando el Sector Financiero</h3>
+            <p>
+              Una institución bancaria implementó un sistema de ciberseguridad
+              impulsado por IA y blockchain para la detección proactiva de
+              fraudes y protección de datos. En el primer año, se redujeron los
+              incidentes de seguridad en un 40% y se fortaleció la confianza del
+              cliente.
+            </p>
+            <div class="tags">
+              <span class="tag">Ciberseguridad</span>
+              <span class="tag">Blockchain</span>
+              <span class="tag">Finanzas</span>
+            </div>
+            <a href="#" class="read-more">Leer más &gt;</a>
+          </div>
+        </div>
+
+        <!-- Caso de Éxito 4: IoT para Smart Cities -->
+        <div class="case-card">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7MURINH_joC7lEiEWSOOZzag6jlQkSrPBPQ&s"
+            alt="Smart City"
+            loading="lazy"
+          />
+          <div class="case-content">
+            <h3>Ciudades Inteligentes con IoT</h3>
+            <p>
+              Una ciudad europea desplegó una red de sensores IoT para optimizar
+              la gestión del tráfico, el consumo energético del alumbrado
+              público y la recolección de residuos. Esto llevó a una reducción
+              del 20% en el tráfico y un ahorro energético del 18%.
+            </p>
+            <div class="tags">
+              <span class="tag">IoT</span>
+              <span class="tag">Smart Cities</span>
+              <span class="tag">Sostenibilidad</span>
+            </div>
+            <a href="#" class="read-more">Leer más &gt;</a>
+          </div>
+        </div>
+
+        <!-- Puedes añadir más casos de éxito aquí -->
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        &copy; 2023 Innovación en Sistemas Informáticos. Todos los derechos
+        reservados.
+      </p>
+      <p>Impulsando el futuro de la tecnología.</p>
+    </footer>
+
+    <script>
+      document
+        .getElementById("hamburgerMenu")
+        .addEventListener("click", function () {
+          document.body.classList.toggle("menu-open");
+        });
+
+      document.body.addEventListener("click", function (event) {
+        const hamburger = document.getElementById("hamburgerMenu");
+        const nav = document.getElementById("mainNav");
+        const isClickInsideMenu =
+          nav.contains(event.target) || hamburger.contains(event.target);
+
+        if (
+          !isClickInsideMenu &&
+          document.body.classList.contains("menu-open")
+        ) {
+          document.body.classList.remove("menu-open");
+        }
+      });
+    </script>
+  </body>
+</html>

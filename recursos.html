@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Innovación en Sistemas Informáticos - Recursos y Herramientas</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Lato:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="recursos.css" />
+    <link
+      rel="icon"
+      type="icon"
+      href="https://img.freepik.com/vector-gratis/plantilla-logotipo-laptop-plana_23-2149020405.jpg"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo">IT Innovación</a>
+      <div class="hamburger-menu" id="hamburgerMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav id="mainNav">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="tendencias.html">Tendencias Clave</a></li>
+          <li><a href="exito.html">Casos de Éxito</a></li>
+          <li>
+            <a href="recursos.html" class="active">Recursos y Herramientas</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <h2>Recursos Esenciales para la Innovación en IT</h2>
+
+      <div class="resources-grid">
+        <!-- Recurso 1: Plataformas de Desarrollo Cloud -->
+        <div class="resource-card">
+          <h3>Plataformas Cloud</h3>
+          <p>
+            Accede a servicios de computación en la nube para infraestructura,
+            plataformas y software. Imprescindible para escalar, innovar y
+            desplegar soluciones de forma ágil.
+          </p>
+          <a
+            href="https://cloud.google.com/"
+            target="_blank"
+            class="link-button"
+            >Google Cloud Platform</a
+          >
+          <a href="https://aws.amazon.com/" target="_blank" class="link-button"
+            >Amazon Web Services</a
+          >
+          <a
+            href="https://azure.microsoft.com/"
+            target="_blank"
+            class="link-button"
+            >Microsoft Azure</a
+          >
+        </div>
+
+        <!-- Recurso 2: Herramientas de Inteligencia Artificial / ML -->
+        <div class="resource-card">
+          <h3>IA y Machine Learning</h3>
+          <p>
+            Explora frameworks y librerías para desarrollar modelos de IA y ML.
+            Desde procesamiento de datos hasta redes neuronales profundas.
+          </p>
+          <a
+            href="https://www.tensorflow.org/"
+            target="_blank"
+            class="link-button"
+            >TensorFlow</a
+          >
+          <a href="https://pytorch.org/" target="_blank" class="link-button"
+            >PyTorch</a
+          >
+          <a
+            href="https://scikit-learn.org/stable/"
+            target="_blank"
+            class="link-button"
+            >Scikit-learn</a
+          >
+        </div>
+
+        <!-- Recurso 3: Plataformas de Desarrollo Ágil y DevOps -->
+        <div class="resource-card">
+          <h3>DevOps y Agile</h3>
+          <p>
+            Herramientas para la integración continua, entrega continua (CI/CD),
+            gestión de proyectos ágiles y colaboración en equipo.
+          </p>
+          <a
+            href="https://aws.amazon.com/devops/what-is-devops/"
+            target="_blank"
+            class="link-button"
+            >Azure DevOps</a
+          >
+          <a
+            href="https://www.atlassian.com/software/jira"
+            target="_blank"
+            class="link-button"
+            >Jira</a
+          >
+          <a href="https://gitlab.com/" target="_blank" class="link-button"
+            >GitLab</a
+          >
+        </div>
+
+        <!-- Recurso 4: Cursos Online y Aprendizaje -->
+        <div class="resource-card">
+          <h3>Educación y Capacitación</h3>
+          <p>
+            Plataformas líderes para cursos, certificaciones y especializaciones
+            en las últimas tecnologías informáticas.
+          </p>
+          <a
+            href="https://www.coursera.org/"
+            target="_blank"
+            class="link-button"
+            >Coursera</a
+          >
+          <a href="https://www.edx.org/" target="_blank" class="link-button"
+            >edX</a
+          >
+          <a href="https://www.udemy.com/" target="_blank" class="link-button"
+            >Udemy</a
+          >
+        </div>
+
+        <!-- Puedes añadir más tarjetas de recursos aquí -->
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        &copy; 2023 Innovación en Sistemas Informáticos. Todos los derechos
+        reservados.
+      </p>
+      <p>Impulsando el futuro de la tecnología.</p>
+    </footer>
+
+    <script>
+      document
+        .getElementById("hamburgerMenu")
+        .addEventListener("click", function () {
+          document.body.classList.toggle("menu-open");
+        });
+
+      document.body.addEventListener("click", function (event) {
+        const hamburger = document.getElementById("hamburgerMenu");
+        const nav = document.getElementById("mainNav");
+        const isClickInsideMenu =
+          nav.contains(event.target) || hamburger.contains(event.target);
+
+        if (
+          !isClickInsideMenu &&
+          document.body.classList.contains("menu-open")
+        ) {
+          document.body.classList.remove("menu-open");
+        }
+      });
+    </script>
+  </body>
+</html>
